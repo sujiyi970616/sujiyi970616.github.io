@@ -28,8 +28,9 @@
 <meta property="og:description" content="学习bootstrap用法01文本属性bootstrap中关于文本自带的属性 123456789101112&lt;small&gt;本行内容是在标签内&lt;&#x2F;small&gt;&lt;br&gt;&lt;strong&gt;本行内容是在标签内&lt;&#x2F;strong&gt;&lt;br&gt;&lt;em&gt;本行内容是在标签内，并呈现为斜体&lt;&#x2F;em&gt;">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://sujiyi970616.github.io/images/pasted-38.png">
+<meta property="og:image" content="https://sujiyi970616.github.io/images/pasted-43.png">
 <meta property="article:published_time" content="2020-04-10T06:01:00.000Z">
-<meta property="article:modified_time" content="2020-04-10T07:06:22.170Z">
+<meta property="article:modified_time" content="2020-04-10T07:14:23.005Z">
 <meta property="article:author" content="MGSU">
 <meta property="article:tag" content="bootstrap框架">
 <meta name="twitter:card" content="summary">
@@ -224,7 +225,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-04-10 14:01:00 / 修改时间：15:06:22" itemprop="dateCreated datePublished" datetime="2020-04-10T14:01:00+08:00">2020-04-10</time>
+              <time title="创建时间：2020-04-10 14:01:00 / 修改时间：15:14:23" itemprop="dateCreated datePublished" datetime="2020-04-10T14:01:00+08:00">2020-04-10</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -343,7 +344,7 @@
   </div>
   <button type="submit" class="btn btn-default">提交</button>
 </form>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">结果如图：</span><br><span class="line">![upload successful](&#x2F;images&#x2F;pasted-41.png)</span><br><span class="line">### 内联表单（水平）</span><br><span class="line"></span><br><span class="line">内联表单</span><br><span class="line">如果需要创建一个表单，它的所有元素是内联的，向左对齐的，标签是并排的，请向 &#96;&#96;&#96;&lt;form&gt; &#96;&#96;&#96;标签添加 class _.form-inline。_</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">结果如图：</span><br><span class="line">![upload successful](&#x2F;images&#x2F;pasted-41.png)</span><br><span class="line">### 内联表单</span><br><span class="line"></span><br><span class="line">内联表单</span><br><span class="line">如果需要创建一个表单，它的所有元素是内联的，向左对齐的，标签是并排的，请向 &#96;&#96;&#96;&lt;form&gt; &#96;&#96;&#96;标签添加 class _.form-inline。_</span><br></pre></td></tr></table></figure>
 <form class="form-inline" role="form">
   <div class="form-group">
     <label class="sr-only" for="name">名称</label>
@@ -360,9 +361,39 @@
   </div>
   <button type="submit" class="btn btn-default">提交</button>
 </form>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">效果如图</span><br><span class="line">![upload successful](&#x2F;images&#x2F;pasted-42.png)</span><br><span class="line"></span><br><span class="line">### 水平表单</span><br><span class="line"></span><br><span class="line">水平表单与其他表单不仅标记的数量上不同，而且表单的呈现形式也不同。如需创建一个水平布局的表单，请按下面的几个步骤进行：</span><br><span class="line"></span><br><span class="line">向父 &#96;&#96;&#96;&lt;form&gt;&#96;&#96;&#96; 元素添加 class .form-horizontal。&lt;br&gt;</span><br><span class="line">把标签和控件放在一个带有 class .form-group 的 &#96;&lt;div&gt;&#96; 中。&lt;br&gt;</span><br><span class="line">向标签添加 class .control-label。</span><br></pre></td></tr></table></figure>
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+    <label for="firstname" class="col-sm-2 control-label">名字</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="firstname" placeholder="请输入名字">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="lastname" class="col-sm-2 control-label">姓</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="lastname" placeholder="请输入姓">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox">请记住我
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">登录</button>
+    </div>
+  </div>
+</form>
 ```
-效果如图
-![upload successful](/images/pasted-42.png)
+效果
+
+<p><img src="/images/pasted-43.png" alt="upload successful"></p>
 
     </div>
 
@@ -463,7 +494,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
